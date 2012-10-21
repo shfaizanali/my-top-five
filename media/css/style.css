@@ -97,6 +97,11 @@ a{
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
     padding:9px;
     width:63%;
+    display: inline-block;
+    float: left;
+    margin:5px;
+    margin-top: 6px;
+
 }
 .search-btn{
     padding-top: 6px;
@@ -170,8 +175,8 @@ legend {
     padding-bottom: 4px;
 }
 .list-form {
-    background-color: whiteSmoke;
-    padding: 19px 0px 31px 12px;
+    padding: 19px 0px 0px 12px;
+    margin: 0 auto;
 }
 label {
     font-size: 18px;
@@ -213,4 +218,37 @@ input.span4, textarea.span4, .uneditable-input.span4 {
 }
 .label-counter {
     padding: 0px 4px 0px;
+}
+.bot-header-link {
+    background-color: #FAFAFA;
+    background-image: -moz-linear-gradient(top, white, #F2F2F2);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#F2F2F2));
+    background-image: -webkit-linear-gradient(top, white, #F2F2F2);
+    background-image: -o-linear-gradient(top, white, #F2F2F2);
+    background-image: linear-gradient(to bottom, white, #F2F2F2);
+    background-repeat: repeat-x;
+    border: 1px solid #D4D4D4;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    display: inline-block;
+    margin-top: 6px;
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-left: 32px;
+}
+.modal-footer{
+    background-color:  white;
+    margin-top: 37px;
+}
+.form-horizontal .control-label {
+    width: 109px;
+}
+.form-horizontal .controls {
+    margin-left: 130px;
 }

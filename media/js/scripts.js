@@ -15,17 +15,36 @@ $(document).ready(function(){
     
     $('.add-topic-form').submit(function(){
         var flag = true;
+        clearErrorList();
+        var errorList = new Array();
         if($('.inputTitle').val() == ''){
-            $('.inputTitle').parent('.control-group').addClass('error');
-            $('.inputTitle').siblings('.help-block').html('Title cannot be left blank');
+            errorList.push("Title cannot be left blank")
             flag = false;
         }
         if($('.inputDescription').val() == '') {
-            $('.inputDescription').parent('.control-group').addClass('error');
-            $('.inputDescription').siblings('.help-block').html('Title cannot be left blank');
+            errorList.push("Description cannot be left blank")
             flag = false;
         }
-        return flag;
+        
+        if(flag == false) {
+            displayErrorList(errorList);
+            return false;
+        }
+        else {
+            return true;
+        }
+        
     })
 });
 
+function clearErrorList() {
+    $('.alert').css('display','none');
+    $('.errorList').empty();
+}
+
+function displayErrorList(errorListArray) {
+    $('.alert').css('display','block');
+    for (i = 0;i<errorListArray.length;i++) {
+        $('.errorList').append('<li>'+errorListArray[i]+'</li>');
+    }
+}

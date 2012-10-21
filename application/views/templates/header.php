@@ -36,4 +36,8 @@
                             <button type="submit" class="btn btn-primary search-btn">Search</button>
                         </div>
                     </form>
+                    <a href="#addTopic" class="bot-header-link" data-toggle="modal">Add Topic</a>
+                    <a href="#" class="bot-header-link">Trending</a>
+                    
                 </div>
+                

@@ -4,7 +4,7 @@
         <legend>Top Members</legend>
         <div class="top-members"> 
             <div class="image-container">
-                <img src="http://localhost:82/my-top-five/me.jpg"></img>
+                <img src="http://localhost/my-top-five/me.jpg"></img>
             </div>
             <a href="#" class="member-name">Lorem Ipsum</a>
             <div>
@@ -22,7 +22,7 @@
         </div>
         <div class="top-members"> 
             <div class="image-container">
-                <img src="http://localhost:82/my-top-five/me.jpg"></img>
+                <img src="http://localhost/my-top-five/me.jpg"></img>
             </div>
             <a href="#" class="member-name">Lorem Ipsum</a>
             <div>
@@ -40,7 +40,7 @@
         </div>
         <div class="top-members"> 
             <div class="image-container">
-                <img src="http://localhost:82/my-top-five/me.jpg"></img>
+                <img src="http://localhost/my-top-five/me.jpg"></img>
             </div>
             <a href="#" class="member-name">Lorem Ipsum</a>
             <div>
@@ -58,7 +58,7 @@
         </div>
         <div class="top-members"> 
             <div class="image-container">
-                <img src="http://localhost:82/my-top-five/me.jpg"></img>
+                <img src="http://localhost/my-top-five/me.jpg"></img>
             </div>
             <a href="#" class="member-name">Lorem Ipsum</a>
             <div>
