@@ -1,3 +1,6 @@
+body {
+    background: url(../img/background.png);
+}
 .header-button {
     margin-top: 5px;
     padding: 5px;
@@ -15,56 +18,42 @@
     font-family: sans-serif;
 }
 .count-container {
-    height:50px;
-    border:1px solid #DDD;
-    width:50px;
-    margin-right:6px;
-    font-family: sans-serif;
-    margin-top: 7px;
+    background: transparent;
+    float: right;
+    margin: 0 3px 0 0;
+    padding: 5px;
+    width: 46px;
+    height: 38px;
+    color: #555;
+    margin-top: 16px;
+    margin-right: 8px;
 }
-.count{
-    padding-top: 6px;
+.large-count {
+    height: 25px;
+    font-size: 274%;
     font-weight: bold;
-    font-size: 27px;
-
+    vertical-align: baseline;
+    padding-left: 12px;
 }
-.count-text{
-    height: 12px;
-    width: 100%;
-    font-size: 11px;
+.mini-count {
+    margin-right: 4px;
     font-weight: bold;
-    border-bottom: 1px solid #DDD;
-    padding-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+.count-lists {
+    margin-left: 19px;
+    font-size: 17px;
+    margin-top: 5px;
 }
 .list-topic-container {
     height:58px;
     min-height: 40px;
     margin-right: 6px;
-    width: 78%;
+    width: 90%;
     font-size: 17px;
     padding-top: 8px;
 
-}
-.up-votes-counter{
-    color:grey;;
-}
-.down-votes-counter{
-    color:grey;;
-}
-.list-counter {
-    color:black;
-}
-.up-votes {
-    color:white;
-    background-color: #44c400;
-}
-.down-votes {
-    color:white;
-    background-color: #f31900;
-}
-.list-counts{
-    color:white;
-    background-color: #3B5998;
 }
 .side-bar{
     min-height:250px;
@@ -131,6 +120,8 @@ legend {
 }
 .image-container {
     float: left;
+    height:50px;
+    width:50px;
     padding-right: 8px;
 }
 .member-info {
@@ -197,6 +188,7 @@ input.span4, textarea.span4, .uneditable-input.span4 {
     font-size :13px;
     font-family: sans-serif;
     float:left;
+    width: 100%;
 }
 .owner-name{
     font-weight: bold;
@@ -237,10 +229,11 @@ input.span4, textarea.span4, .uneditable-input.span4 {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
     display: inline-block;
     margin-top: 6px;
-    width: 100px;
-    padding-top: 20px;
-    padding-bottom: 19px;
-    padding-left: 32px;
+    width: 153px;
+    text-decoration: none;
+    font: bold 20px sans-serif;
+    color: #555;
+    height: 60px;
 }
 .modal-footer{
     background-color:  white;
@@ -251,4 +244,35 @@ input.span4, textarea.span4, .uneditable-input.span4 {
 }
 .form-horizontal .controls {
     margin-left: 130px;
+}
+.owner-and-created{
+    float:right;
+    padding-top: 8px;
+}
+.owner-name {
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+}
+.owner-name a {
+    color: #4280B9;;
+    text-decoration: none;
+    cursor: pointer;
+}
+.owner-name a:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+.time{
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 3px;
+    color: #999;
+}
+.btn-container {
+    padding-top:8px;
+}
+.btn-container a {
+    padding:18px;
 }

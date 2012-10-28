@@ -52,9 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array();
-
-
+$autoload['libraries'] = array('facebook');
 /*
 | -------------------------------------------------------------------
 |  Auto-load Helper Files
@@ -63,10 +61,7 @@ $autoload['libraries'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-
 $autoload['helper'] = array();
-
-
 /*
 | -------------------------------------------------------------------
 |  Auto-load Config files
@@ -79,10 +74,7 @@ $autoload['helper'] = array();
 | config files.  Otherwise, leave it blank.
 |
 */
-
 $autoload['config'] = array();
-
-
 /*
 | -------------------------------------------------------------------
 |  Auto-load Language files

@@ -21,7 +21,11 @@
                         <li><a href="<?=  base_url(); ?>index.php/list5/addlist">Add List</a></li>
                     </ul>
                     <ul class="nav pull-right">
-                        <li ><a href="#">Login</a></li>
+                        <? if($logged == true){ ?>
+                            <li><a href="<?= $loggedURL; ?>"><img src="<?=  base_url(); ?>/media/img/glyphicons_390_facebook.png"></img>Logout</a></li>
+                        <? } else { ?>
+                            <li><a href="<?= $loggedURL; ?>"><img src="<?=  base_url(); ?>/media/img/glyphicons_390_facebook.png"></img>Login</a></li>
+                        <? } ?>
                         <li><a href="register">Register</a></li>
                     </ul>
                 </div>
@@ -36,8 +40,9 @@
                             <button type="submit" class="btn btn-primary search-btn">Search</button>
                         </div>
                     </form>
-                    <a href="#addTopic" class="bot-header-link" data-toggle="modal">Add Topic</a>
-                    <a href="#" class="bot-header-link">Trending</a>
-                    
+                    <div class="btn-container">
+                    <a href="#addTopic" data-toggle="modal" class="btn btn-info">Add Topic</a>
+                    <a href="#" class="btn btn-warning">Trending</a>
+                    <a href="#" class="btn btn-success">My Lists</a>
                 </div>
                 
