@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="<?= base_url(); ?>media/css/bootstrap.css">
         <link rel="stylesheet" href="<?= base_url(); ?>media/css/style.css">
         <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-        <script src ="<?= base_url(); ?>media/js/bootstrap.min.js"></script>
+        <script src ="<?= base_url(); ?>media/js/bootstrap.js"></script>
         <script src="<?= base_url(); ?>media/js/scripts.js"></script>
         <title>My Top Five</title>
     </head>

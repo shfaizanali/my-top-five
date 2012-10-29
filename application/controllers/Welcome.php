@@ -12,11 +12,11 @@ class Welcome extends CI_Controller {
     }
     public function index() {
         $params = array();
-        $params['redirect_uri'] = "http://localhost/my-top-five/index.php/Welcome/index";
+        $params['redirect_uri'] = "http://localhost/my-top-five/index.php/User/login";
         $params['scope'] = "publish_stream";
         $data = array();
         if ($this->user) {
-          $loggedURL = 'logout';
+          $loggedURL = site_url('User/logout');
           $data['logged'] = true;
         } 
         else {
@@ -30,13 +30,6 @@ class Welcome extends CI_Controller {
         $this->load->view('landing-page');
         $this->load->view('templates/sidebar');
         $this->load->view('templates/footer');
-    }
-    
-    public function logout() {
-        session_destroy();
-        $this->load->helper('url');
-        redirect('Welcome/index');
-        
     }
 
 }

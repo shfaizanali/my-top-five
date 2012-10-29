@@ -39,7 +39,7 @@
                         <div class="controls">
                             <div class="input-append">
                                 <div class="input-prepend input-append">
-                                    <span class="add-on"><i class="icon-tags"></i></span><input class="span4 inputTags" id="appendedPrependedInput" size="16" type="text" placeholder="Add tags to your list"><button class="btn btn-inverse" id="addTags"type="button">Add</button>
+                                    <span class="add-on"><i class="icon-tags"></i></span><input class="span4 inputTags typeahead" id="appendedPrependedInput" size="16" type="text" placeholder="Add tags to your list" autocomplete="off"/><button class="btn btn-inverse" id="addTags"type="button">Add</button>
                                 </div>
                             </div>
                         </div>

@@ -33,8 +33,14 @@ $(document).ready(function(){
         else {
             return true;
         }
-        
-    })
+    });
+    $('.typeahead').typeahead({
+    source: function (query, process) {
+        return $.get('/my-top-five/index.php/Topic/getTagsList', { query: query }, function (data) {
+            return(process(data.options));
+        });
+    }
+});
 });
 
 function clearErrorList() {

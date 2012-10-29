@@ -158,6 +158,9 @@ legend {
     color: #3B5998;
     margin-right: 3px;
 }
+.tags-container {
+    margin-left: 128px;
+}
 .main-list{
     font-weight: bold;
 }
@@ -275,4 +278,7 @@ input.span4, textarea.span4, .uneditable-input.span4 {
 }
 .btn-container a {
     padding:18px;
+}
+.typeahead {
+    margin-top: 0px;
 }

@@ -25,6 +25,19 @@ class Topic extends CI_Controller {
         $this->load->view('templates/sidebar');
         $this->load->view('templates/footer');
     }
+    
+    public function getTagsList() {
+        $this->load->model('Tags_Model');
+        $tags = $this->Tags_Model->getTagsList();
+        
+        $tagsArray = array();
+        foreach($tags as $tag) {
+            $tagsArray[] = $tag->name;
+        }
+        
+        header('Content-type:application/json');
+        echo (json_encode(array('options'=>$tagsArray)));
+    }
 
 }
 
