@@ -37,10 +37,10 @@ class User_Model extends CI_Model {
         );
         
         if($this->db->insert('user', $data)) {
-            return true;
+            return SUCCESS_CODE;
         }
         else {
-            return false;
+            return DB_INSERTION_FAULRE_CODE;
         }
     }
 }

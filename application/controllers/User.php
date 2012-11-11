@@ -38,6 +38,16 @@ class User extends CI_Controller{
         redirect('Welcome/index');
         
     }
+    
+    public function isLoggedIn() {
+        $me = $this->facebook->getUser();
+        if($me) {
+            echo SUCCESS_CODE;
+        }
+        else {
+            echo NOT_LOGGED_IN_CODE;
+        }
+    }
 }
 
 ?>

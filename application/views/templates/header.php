@@ -41,7 +41,7 @@
                         </div>
                     </form>
                     <div class="btn-container">
-                    <a href="#addTopic" data-toggle="modal" class="btn btn-info">Add Topic</a>
+                    <a href="#" id="btnAddTopic" class="btn btn-info">Add Topic</a>
                     <a href="#" class="btn btn-warning">Trending</a>
                     <a href="#" class="btn btn-success">My Lists</a>
                 </div>

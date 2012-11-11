@@ -39,6 +39,7 @@
 */
 
 $route['default_controller'] = "Welcome";
+$route['do-add-topic'] = "topic/doAddTopic";
 $route['404_override'] = '';
 
 

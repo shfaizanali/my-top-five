@@ -13,6 +13,7 @@ class Topic extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->helper('url');
+        $this->load->model('Topic_Model');
     }
 
     public function Index() {
@@ -26,17 +27,11 @@ class Topic extends CI_Controller {
         $this->load->view('templates/footer');
     }
     
-    public function getTagsList() {
-        $this->load->model('Tags_Model');
-        $tags = $this->Tags_Model->getTagsList();
-        
-        $tagsArray = array();
-        foreach($tags as $tag) {
-            $tagsArray[] = $tag->name;
-        }
-        
-        header('Content-type:application/json');
-        echo (json_encode(array('options'=>$tagsArray)));
+    public function doAddTopic(){
+        $topicTitle = $this->input->post('topicname');
+        $topicDesc = $this->input->post('topic-description');
+        $tags = $this->input->post('tags');
+        echo $this->Topic_Model->addTopic($topicTitle,$topicDesc,$tags);
     }
 
 }

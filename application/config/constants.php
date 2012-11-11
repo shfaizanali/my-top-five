@@ -36,6 +36,13 @@ define('FOPEN_READ_WRITE_CREATE',				'a+b');
 define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
+/**
+ * Application related constants
+ */
+define('TOPIC_TABLE','topic');
+define('SUCCESS_CODE',0);
+define('NOT_LOGGED_IN_CODE',-1);
+define('DB_INSERTION_FAULRE_CODE',-2);
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

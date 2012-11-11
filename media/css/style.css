@@ -279,6 +279,6 @@ input.span4, textarea.span4, .uneditable-input.span4 {
 .btn-container a {
     padding:18px;
 }
-.typeahead {
-    margin-top: 0px;
+.typeahead{
+    margin:0px;
 }
